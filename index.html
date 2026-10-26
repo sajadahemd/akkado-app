@@ -1,0 +1,276 @@
+<!doctype html>
+<!--
+  Akkado: privacy policy and support page (Arabic, then English).
+  Self-contained: inline CSS, no scripts, no fonts, images or other files from anywhere else.
+
+  Before publishing, replace every placeholder in this file:
+    akkadoapp@gmail.com   the support email address (it appears as text and in the mailto: links)
+  The placeholders are written HTML-escaped, so search for the escaped form shown above.
+  The page's own address is the privacy policy URL and the support URL of both store listings.
+  The phone apps also bundle a copy of this file (dist/privacy.html), opened from «سياسة الخصوصية» on the
+  sign-in screen and in الإعدادات. So fill in the placeholders before the store builds, and after any edit rebuild the
+  apps and update the «آخر تحديث» / "Last updated" dates, so the hosted page and the bundled copy say the same.
+  The account section has the anchor #account (English: #en-account), for a store field that asks
+  for an account deletion link. The data section has the anchor #data (English: #en-data).
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="سياسة الخصوصية والدعم لتطبيق أكادو. Akkado privacy policy and support.">
+<title>أكادو — سياسة الخصوصية والدعم</title>
+<style>
+  :root {
+    --bg: #f6f8f5;
+    --surface: #ffffff;
+    --text: #1f3328;
+    --muted: #4f6758;
+    --brand: #00471b;
+    --brand-soft: #e8f3eb;
+    --border: #d5e3d9;
+    --link: #00652a;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1712;
+      --surface: #16211a;
+      --text: #e3eee6;
+      --muted: #a9bfb0;
+      --brand: #7fd19b;
+      --brand-soft: #1d3324;
+      --border: #2b3f31;
+      --link: #8fdcaa;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1712;
+    --surface: #16211a;
+    --text: #e3eee6;
+    --muted: #a9bfb0;
+    --brand: #7fd19b;
+    --brand-soft: #1d3324;
+    --border: #2b3f31;
+    --link: #8fdcaa;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, "Geeza Pro", "Noto Sans Arabic", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    overflow-wrap: break-word;
+  }
+  [lang="en"] { line-height: 1.6; }
+  .page { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  header.top { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 8px; }
+  .mark {
+    flex: none; width: 52px; height: 52px; border-radius: 14px;
+    display: grid; place-items: center;
+    background: var(--brand); color: var(--bg);
+    font-size: 26px; font-weight: 700; line-height: 1;
+  }
+  .titles { flex: 1 1 220px; min-width: 0; }
+  h1 { margin: 0; font-size: 1.6rem; line-height: 1.3; }
+  .subtitle { margin: 2px 0 0; color: var(--muted); }
+  .lang { flex: none; padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); text-decoration: none; color: var(--link); font-size: 0.95rem; }
+  .lang:hover, .lang:focus-visible { border-color: var(--brand); }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 12px 0 20px; }
+  .summary { background: var(--brand-soft); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; margin: 0 0 28px; }
+  .summary h2 { margin-top: 0; font-size: 1.1rem; }
+  .summary ul { margin: 0; }
+  section.lang-part { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 8px 20px 20px; }
+  section.lang-part + section.lang-part { margin-top: 32px; }
+  h2 { font-size: 1.2rem; line-height: 1.4; margin: 28px 0 8px; color: var(--brand); }
+  h3 { font-size: 1.05rem; margin: 18px 0 4px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-inline-start: 1.3em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); }
+  .ltr { direction: ltr; unicode-bidi: isolate; }
+  strong { font-weight: 700; }
+  footer { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 28px; }
+  @media (max-width: 420px) {
+    body { font-size: 16px; }
+    section.lang-part { padding: 4px 14px 16px; border-radius: 12px; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+<section class="lang-part" id="ar" lang="ar" dir="rtl">
+  <header class="top">
+    <div class="mark" aria-hidden="true">أ</div>
+    <div class="titles">
+      <h1>أكادو — سياسة الخصوصية والدعم</h1>
+      <p class="subtitle">تطبيق أكادو على iPhone وiPad وAndroid</p>
+    </div>
+    <a class="lang" href="#en" hreflang="en" lang="en">English</a>
+  </header>
+  <p class="meta">آخر تحديث: ٢٥ تشرين الأول ٢٠٢٦ (<span class="ltr">2026-10-25</span>) · المطوّر: <span class="ltr">Sajad Ahmed</span></p>
+
+  <div class="summary">
+    <h2>سياسة الخصوصية باختصار</h2>
+    <ul>
+      <li><strong>لا يجمع المطوّر أي بيانات.</strong> لا إعلانات ولا تتبّع، ولا خوادم للمطوّر.</li>
+      <li>على Android فقط: ترسل مكتبة ML Kit من Google، التي يستخدمها الماسح وقارئ رمز QR، معلومات تقنية إلى Google (انظر <a href="#data">«البيانات التي نجمعها»</a>).</li>
+      <li>تبقى السجلات على هاتفك وعلى كمبيوتر مؤسستك فقط، ولا تصل إلى المطوّر ولا إلى أي جهة أخرى.</li>
+      <li>يتصل الهاتف بكمبيوتر مؤسستك عبر الشبكة المحلية فقط، والسجلات تنتقل بينهما مشفّرة.</li>
+      <li>يصدر مسؤول النظام في مؤسستك الحسابات، ولا يمكن إنشاء حساب من داخل التطبيق.</li>
+    </ul>
+  </div>
+
+  <h2>ما هو أكادو</h2>
+  <p>أكادو سجل للكتب الرسمية في مكتب جامعي: الكتب الواردة والصادرة والأوامر الإدارية وملاحقها، ومرفقاتها، ونشاط كل كتاب. تُحفظ السجلات في برنامج أكادو لسطح المكتب على كمبيوتر المكتب.</p>
+  <p>تطبيق الهاتف يرتبط بذلك الكمبيوتر عبر شبكة Wi-Fi نفسها أو نقطة اتصال الهاتف. يعرض السجلات ويضيف إليها ويعدّلها، ويمسح المستندات الورقية بالكاميرا إلى ملفات PDF، ويعرض المرفقات وينزّلها ويشاركها، ويعمل دون اتصال بالسجلات التي حُمّلت سابقاً.</p>
+
+  <h2 id="data">البيانات التي نجمعها</h2>
+  <p><strong>لا يجمع المطوّر شيئاً.</strong> لا يحتوي التطبيق على إعلانات أو تتبّع، ولا يرسل أي شيء إلى المطوّر، وليس للمطوّر خادم يتصل به التطبيق. لا نبيع البيانات ولا نشاركها، لأنها لا تصل إلينا أصلاً.</p>
+  <p>على Android يرسل ML Kit من Google إلى Google: معلومات الجهاز (الشركة المصنّعة والطراز وإصدار النظام)، واسم حزمة التطبيق وإصداره، ومعرّفاً خاصاً بالتثبيت، وقياسات أداء الماسح وقارئ الرمز ورموز أخطائهما، لأغراض التشخيص وإحصاءات الاستخدام. تُرسل مشفّرة عبر HTTPS، ولا تنقلها Google إلى أطراف أخرى، ولا تتضمن الصور الممسوحة أو السجلات أو بيانات الحساب. ولا يجمع التطبيق على iPhone وiPad أي بيانات.</p>
+
+  <h2>أين تُحفظ بياناتك</h2>
+  <ul>
+    <li><strong>على هاتفك:</strong> نسخة من السجلات والمرفقات التي حُمّلت ليعمل التطبيق دون اتصال، والتعديلات التي تنتظر الإرسال، ومفاتيح الربط بكمبيوتر مؤسستك، وجلسة الدخول. تبقى داخل التطبيق على الهاتف، وتُحذف عند حذف التطبيق.</li>
+    <li><strong>على كمبيوتر مؤسستك:</strong> السجلات ومرفقاتها في برنامج أكادو لسطح المكتب. هذا الكمبيوتر تملكه مؤسستك وتديره، ولا يصل إليه المطوّر.</li>
+    <li><strong>بين الهاتف والكمبيوتر:</strong> تنتقل السجلات مباشرة عبر الشبكة المحلية، مشفّرة بمفتاح خاص بكل هاتف، ولا تمر بأي خادم على الإنترنت.</li>
+    <li><strong>عند «تنزيل» أو «مشاركة» مرفق:</strong> يذهب الملف إلى المكان أو التطبيق الذي تختاره أنت (تطبيق الملفات، البريد، WhatsApp…)، ويخضع بعدها لسياسة ذلك التطبيق.</li>
+  </ul>
+
+  <h2>الأذونات</h2>
+  <ul>
+    <li><strong>الكاميرا:</strong> لمسح الكتب والمستندات عندما تضغط زر المسح، ولقراءة رمز QR عند ربط الهاتف بالكمبيوتر. تصبح الصفحات الممسوحة ملف PDF يُرفق بالكتاب ويُرسل إلى كمبيوتر مؤسستك فقط.</li>
+    <li><strong>الشبكة المحلية:</strong> للعثور على كمبيوتر مؤسستك المرتبط والاتصال به. إذا تغيّر عنوان الكمبيوتر يبحث عنه التطبيق في الشبكة المحلية، ولا يرسل سجلاتك إلا إلى الكمبيوتر الذي رُبط به.</li>
+    <li><strong>على iPhone وiPad</strong> يتم مسح المستندات (بماسح المستندات المدمج من Apple) وقراءة رمز QR على الجهاز نفسه.</li>
+    <li><strong>على Android</strong> يعمل ماسح المستندات (ضمن خدمات Google Play على الهاتف) وقارئ رمز QR بمكتبة ML Kit من Google، وتُعالَج الصور على الهاتف نفسه. وبحسب وثائق Google ترسل المكتبة إلى Google معلومات تقنية عن أدائها واستخدامها (انظر <a href="#data">«البيانات التي نجمعها»</a>)، ويخضع ذلك لسياسة خصوصية Google.</li>
+  </ul>
+
+  <h2 id="account">الحسابات وتسجيل الدخول</h2>
+  <ul>
+    <li>لا يمكن إنشاء حساب من داخل التطبيق. يصدر مسؤول النظام في مؤسستك حساباً لكل موظف: بريد إلكتروني وكلمة مرور.</li>
+    <li>قائمة الحسابات مضمّنة في التطبيق نفسه، ولا تحتوي على الأسماء ولا على عناوين البريد الإلكتروني أو كلمات المرور نفسها. لكل حساب قيمة مشتقّة باتجاه واحد من البريد الإلكتروني، وأخرى من كلمة المرور، وكلتاهما بطيئة الحساب عمداً. لا يمكن استخراج البريد أو كلمة المرور منهما، لكن من يعرف عنوان بريد مسبقاً يستطيع التحقق من وجوده في القائمة. يتم التحقق من كلمة المرور على الهاتف، ولا تُرسل إلى أي مكان.</li>
+    <li>بعد تسجيل الدخول يحفظ الهاتف بريدك الإلكتروني ليبقيك مسجّلاً. «تسجيل الخروج» في الإعدادات يحذف جلسة الدخول فقط، ويُبقي ربط الهاتف وسجلاته المحفوظة.</li>
+    <li>حساب المراجعة يفتح وضع العرض التجريبي ببيانات تجريبية مضمّنة في التطبيق. لا يتصل بأي كمبيوتر، وتبقى تعديلاته في ذاكرة التطبيق فقط حتى إغلاق التطبيق أو تسجيل الخروج.</li>
+  </ul>
+  <h3>طلب حذف الحساب أو تغييره</h3>
+  <ul>
+    <li>لحذف حسابك، أو تغيير بريده الإلكتروني أو كلمة مروره، تواصل مع مسؤول النظام في مؤسستك، أو راسلنا على <a class="ltr" href="mailto:akkadoapp@gmail.com">akkadoapp@gmail.com</a>.</li>
+    <li>يُحذف الحساب من القائمة في تحديث التطبيق التالي، وعندها يخرج تلقائياً كل هاتف مسجّل الدخول به.</li>
+    <li>لحذف ما حفظه التطبيق على هاتفك احذف التطبيق. اضغط قبل ذلك «تحديث ومزامنة» حتى لا تضيع تعديلات لم تُرسل بعد.</li>
+    <li>السجلات المحفوظة على كمبيوتر المؤسسة تخص مؤسستك وتديرها هي. لأي طلب بشأنها تواصل مع مسؤول النظام.</li>
+  </ul>
+
+  <h2>الأطفال</h2>
+  <p>أكادو أداة عمل لموظفي المؤسسة، وليس موجّهاً للأطفال. ولا يجمع المطوّر بيانات من أي أحد، بمن فيهم الأطفال.</p>
+
+  <h2>التغييرات على هذه السياسة</h2>
+  <p>إذا تغيّرت طريقة تعامل التطبيق مع البيانات، نحدّث هذه الصفحة وتاريخ «آخر تحديث» في أعلاها.</p>
+
+  <h2>الدعم والتواصل</h2>
+  <ul>
+    <li>للحصول على حساب، أو لمشكلة في تسجيل الدخول أو ربط الهاتف: تواصل أولاً مع مسؤول النظام في مؤسستك.</li>
+    <li>لأسئلة عن التطبيق أو عن هذه السياسة: <a class="ltr" href="mailto:akkadoapp@gmail.com">akkadoapp@gmail.com</a></li>
+  </ul>
+  <h3>مساعدة سريعة</h3>
+  <ul>
+    <li><strong>«البريد الإلكتروني أو كلمة المرور غير صحيحة.»</strong> اكتبهما كما أعطاك إياهما المسؤول. بعد ٥ محاولات خاطئة ينتظر زر الدخول ٣٠ ثانية، وتتضاعف المدة مع كل محاولة خاطئة أخرى حتى ١٥ دقيقة.</li>
+    <li><strong>الهاتف لا يجد الكمبيوتر:</strong> تأكد أن أكادو مفتوح على الكمبيوتر، وأن الهاتف والكمبيوتر على الشبكة نفسها (شبكات الضيوف التي تعزل الأجهزة لا تعمل)، ثم اضغط «إعادة المحاولة الآن».</li>
+    <li><strong>ربط الهاتف:</strong> على الكمبيوتر افتح الإعدادات ← ربط هاتف مباشرة ← إظهار رمز الربط، وامسح الرمز من الهاتف. الرمز صالح لمرة واحدة ولمدة خمس دقائق.</li>
+    <li><strong>دون اتصال:</strong> تبقى السجلات التي حُمّلت سابقاً متاحة، وتُرسل تعديلاتك عند عودة الاتصال بالكمبيوتر.</li>
+  </ul>
+</section>
+
+<section class="lang-part" id="en" lang="en" dir="ltr">
+  <header class="top">
+    <div class="mark" aria-hidden="true">A</div>
+    <div class="titles">
+      <h1>Akkado — Privacy Policy and Support</h1>
+      <p class="subtitle">The Akkado app for iPhone, iPad and Android</p>
+    </div>
+    <a class="lang" href="#ar" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+  </header>
+  <p class="meta">Last updated: 25 October 2026 · Developer: Sajad Ahmed</p>
+
+  <div class="summary">
+    <h2>Privacy policy in short</h2>
+    <ul>
+      <li><strong>The developer collects no data.</strong> No ads, no tracking, and no developer servers.</li>
+      <li>On Android only: Google's ML Kit, which the scanner and the QR reader use, sends technical information to Google (see <a href="#en-data">"Data we collect"</a>).</li>
+      <li>Records stay on your phone and on your organisation's computer. They never reach the developer or anyone else.</li>
+      <li>The phone talks to your organisation's computer over the local network only, and records travel between them encrypted.</li>
+      <li>Accounts are issued by your organisation's administrator. No account can be created in the app.</li>
+    </ul>
+  </div>
+
+  <h2>What Akkado does</h2>
+  <p>Akkado is a register of official correspondence for a university office: incoming and outgoing letters, administrative orders and their appendices, their attachments, and each letter's activity. The records are kept by the Akkado desktop app on the office computer.</p>
+  <p>The phone app pairs with that computer over the same Wi-Fi network or the phone's hotspot. It shows, adds and edits records, scans paper documents with the camera into PDF files, views, downloads and shares attachments, and keeps working offline with the records it has already loaded.</p>
+
+  <h2 id="en-data">Data we collect</h2>
+  <p><strong>The developer collects nothing.</strong> The app has no ads or tracking, sends nothing to the developer, and the developer runs no server that the app talks to. We do not sell or share data, because it never reaches us.</p>
+  <p>On Android, Google's ML Kit sends Google device information (manufacturer, model, OS version), the app's package name and version, a per-installation identifier, and the scanner's and QR reader's performance metrics and error codes, for diagnostics and usage analytics. It is encrypted in transit (HTTPS), Google does not pass it to third parties, and it contains no scanned images, records or account data. On iPhone and iPad the app collects no data.</p>
+
+  <h2>Where your data is kept</h2>
+  <ul>
+    <li><strong>On your phone:</strong> a copy of the records and attachments it has loaded, so it works offline; edits waiting to be sent; the keys that pair it with your organisation's computer; and your sign-in session. They stay inside the app on the phone and are deleted when the app is deleted.</li>
+    <li><strong>On your organisation's computer:</strong> the records and their attachments, in the Akkado desktop app. Your organisation owns and runs that computer; the developer has no access to it.</li>
+    <li><strong>Between the phone and the computer:</strong> records travel directly over the local network, encrypted with a key unique to each phone, and never pass through a server on the internet.</li>
+    <li><strong>When you download or share an attachment:</strong> the file goes where you choose (the Files app, Mail, WhatsApp…), and that app's own policy applies from then on.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Camera:</strong> to scan letters and documents when you press the scan button, and to read the QR code when you pair the phone with the computer. Scanned pages become a PDF that is attached to the record and sent only to your organisation's computer.</li>
+    <li><strong>Local network:</strong> to find and connect to your organisation's paired computer. If the computer's address changes, the app looks for it on the local network, and it sends your records only to the computer it is paired with.</li>
+    <li><strong>On iPhone and iPad,</strong> document scanning (with Apple's built-in document scanner) and QR reading happen on the device.</li>
+    <li><strong>On Android,</strong> the document scanner (part of Google Play services on the phone) and the QR reader use Google's ML Kit, and the images are processed on the phone. According to Google's documentation, ML Kit sends Google technical information about its performance and use (see <a href="#en-data">"Data we collect"</a>); Google's privacy policy covers that.</li>
+  </ul>
+
+  <h2 id="en-account">Accounts and sign-in</h2>
+  <ul>
+    <li>No account can be created in the app. Your organisation's administrator issues each staff member an account: an email address and a password.</li>
+    <li>The list of accounts is built into the app. It holds no names, and no email addresses or passwords as such: for each account, a slow one-way value derived from the email address and one derived from the password. Neither can be turned back into the email address or the password, but someone who already knows an address can check whether it is on the list. The password is checked on the phone and is not sent anywhere.</li>
+    <li>After you sign in, the phone keeps your email address so you stay signed in. Sign out in Settings removes the sign-in session only; the phone's pairing and its saved records stay.</li>
+    <li>The review account opens a demo mode with sample data built into the app. It never connects to a computer, and its edits are kept in memory only, until the app is closed or you sign out.</li>
+  </ul>
+  <h3>Asking for an account to be deleted or changed</h3>
+  <ul>
+    <li>To delete your account, or change its email address or password, contact your organisation's administrator, or write to us at <a href="mailto:akkadoapp@gmail.com">akkadoapp@gmail.com</a>.</li>
+    <li>The account is removed from the list in the next app update. Every phone signed in with it is then signed out automatically.</li>
+    <li>To delete what the app saved on your phone, delete the app. Press <bdi lang="ar">«تحديث ومزامنة»</bdi> (Refresh and sync) first, so that no unsent edits are lost.</li>
+    <li>The records on the organisation's computer belong to your organisation, which manages them. For any request about them, contact the administrator.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Akkado is a work tool for an organisation's staff and is not directed to children. The developer collects no data from anyone, children included.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the way the app handles data changes, we update this page and the "Last updated" date at its top.</p>
+
+  <h2>Support and contact</h2>
+  <ul>
+    <li>To get an account, or for a problem signing in or pairing the phone, contact your organisation's administrator first.</li>
+    <li>For questions about the app or this policy: <a href="mailto:akkadoapp@gmail.com">akkadoapp@gmail.com</a></li>
+  </ul>
+  <h3>Quick help</h3>
+  <ul>
+    <li><strong>"The email or password is incorrect"</strong> (<bdi lang="ar">«البريد الإلكتروني أو كلمة المرور غير صحيحة»</bdi>): type both exactly as the administrator gave them. After 5 wrong attempts the sign-in button waits 30 seconds, twice as long after each further wrong attempt, up to 15 minutes.</li>
+    <li><strong>The phone cannot find the computer:</strong> check that Akkado is open on the computer and that both are on the same network (guest networks that keep devices apart do not work), then press <bdi lang="ar">«إعادة المحاولة الآن»</bdi> (Try again now).</li>
+    <li><strong>Pairing the phone:</strong> on the computer open <bdi lang="ar">الإعدادات</bdi> → <bdi lang="ar">ربط هاتف مباشرة</bdi> → <bdi lang="ar">إظهار رمز الربط</bdi> (Settings → Pair a phone directly → Show pairing code) and scan the code with the phone. The code works once, for five minutes.</li>
+    <li><strong>Offline:</strong> records loaded earlier stay available, and your edits are sent when the phone reaches the computer again.</li>
+  </ul>
+</section>
+
+<footer>© 2026 Sajad Ahmed · <span lang="ar" dir="rtl">أكادو</span> · Akkado</footer>
+</main>
+</body>
+</html>
